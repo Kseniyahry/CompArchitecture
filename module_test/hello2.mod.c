@@ -25,7 +25,7 @@ MODULE_INFO(retpoline, "Y");
 static const char __module_depends[]
 __used
 __attribute__((section(".modinfo"))) =
-"depends=";
+"depends=hello1";
 
 
-MODULE_INFO(srcversion, "C258E2AC8C8639F4D1369CF");
+MODULE_INFO(srcversion, "997D178A3066ADE2DDD416F");

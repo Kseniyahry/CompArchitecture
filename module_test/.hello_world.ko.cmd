@@ -1,1 +1,0 @@
-cmd_/home/kseniyahry/module_test/hello_world.ko := ccache arm-linux-gnueabihf-ld -r -EL -z noexecstack -T ./scripts/module-common.lds -T ./arch/arm/kernel/module.lds  --build-id  -o /home/kseniyahry/module_test/hello_world.ko /home/kseniyahry/module_test/hello_world.o /home/kseniyahry/module_test/hello_world.mod.o ;  true

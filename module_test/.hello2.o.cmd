@@ -1,10 +1,8 @@
-cmd_/home/kseniyahry/module_test/hello_world.mod.o := ccache arm-linux-gnueabihf-gcc -Wp,-MD,/home/kseniyahry/module_test/.hello_world.mod.o.d -nostdinc -isystem /opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/8.3.0/include -I./arch/arm/include -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Werror=return-type -Wno-format-security -std=gnu89 -fno-PIE -fno-dwarf2-cfi-asm -fno-ipa-sra -mabi=aapcs-linux -mfpu=vfp -funwind-tables -marm -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fomit-frame-pointer -fno-var-tracking-assignments -Wdeclaration-after-statement -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned  -DKBUILD_BASENAME='"hello_world.mod"' -DKBUILD_MODNAME='"hello_world"' -DMODULE  -c -o /home/kseniyahry/module_test/hello_world.mod.o /home/kseniyahry/module_test/hello_world.mod.c
+cmd_/home/kseniyahry/Desktop/CompArchitecture/module_test/hello2.o := ccache arm-linux-gnueabihf-gcc -Wp,-MD,/home/kseniyahry/Desktop/CompArchitecture/module_test/.hello2.o.d -nostdinc -isystem /opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/bin/../lib/gcc/arm-linux-gnueabihf/8.3.0/include -I./arch/arm/include -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -Werror-implicit-function-declaration -Werror=return-type -Wno-format-security -std=gnu89 -fno-PIE -fno-dwarf2-cfi-asm -fno-ipa-sra -mabi=aapcs-linux -mfpu=vfp -funwind-tables -marm -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fomit-frame-pointer -fno-var-tracking-assignments -Wdeclaration-after-statement -Wno-pointer-sign -Wno-stringop-truncation -Wno-array-bounds -Wno-stringop-overflow -Wno-restrict -Wno-maybe-uninitialized -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned -I /home/kseniyahry/Desktop/CompArchitecture/module_test/inc  -DMODULE  -DKBUILD_BASENAME='"hello2"' -DKBUILD_MODNAME='"hello2"' -c -o /home/kseniyahry/Desktop/CompArchitecture/module_test/hello2.o /home/kseniyahry/Desktop/CompArchitecture/module_test/hello2.c
 
-source_/home/kseniyahry/module_test/hello_world.mod.o := /home/kseniyahry/module_test/hello_world.mod.c
+source_/home/kseniyahry/Desktop/CompArchitecture/module_test/hello2.o := /home/kseniyahry/Desktop/CompArchitecture/module_test/hello2.c
 
-deps_/home/kseniyahry/module_test/hello_world.mod.o := \
-    $(wildcard include/config/module/unload.h) \
-    $(wildcard include/config/retpoline.h) \
+deps_/home/kseniyahry/Desktop/CompArchitecture/module_test/hello2.o := \
   include/linux/kconfig.h \
     $(wildcard include/config/cpu/big/endian.h) \
     $(wildcard include/config/booger.h) \
@@ -16,54 +14,13 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler-gcc.h \
     $(wildcard include/config/arm64.h) \
+    $(wildcard include/config/retpoline.h) \
     $(wildcard include/config/arch/use/builtin/bswap.h) \
-  include/linux/build-salt.h \
-    $(wildcard include/config/build/salt.h) \
-  include/linux/elfnote.h \
-  include/linux/elf.h \
-  arch/arm/include/asm/elf.h \
-    $(wildcard include/config/mmu.h) \
-    $(wildcard include/config/vdso.h) \
-  arch/arm/include/asm/auxvec.h \
-  arch/arm/include/uapi/asm/auxvec.h \
-  arch/arm/include/asm/hwcap.h \
-  arch/arm/include/uapi/asm/hwcap.h \
-  arch/arm/include/asm/vdso_datapage.h \
-  arch/arm/include/asm/page.h \
-    $(wildcard include/config/cpu/copy/v4wt.h) \
-    $(wildcard include/config/cpu/copy/v4wb.h) \
-    $(wildcard include/config/cpu/copy/feroceon.h) \
-    $(wildcard include/config/cpu/copy/fa.h) \
-    $(wildcard include/config/cpu/sa1100.h) \
-    $(wildcard include/config/cpu/xscale.h) \
-    $(wildcard include/config/cpu/xsc3.h) \
-    $(wildcard include/config/cpu/copy/v6.h) \
-    $(wildcard include/config/kuser/helpers.h) \
-    $(wildcard include/config/arm/lpae.h) \
-    $(wildcard include/config/have/arch/pfn/valid.h) \
-  arch/arm/include/asm/glue.h \
-  arch/arm/include/asm/pgtable-2level-types.h \
-  arch/arm/include/uapi/asm/types.h \
-  include/asm-generic/int-ll64.h \
-  include/uapi/asm-generic/int-ll64.h \
-  arch/arm/include/generated/uapi/asm/bitsperlong.h \
-  include/asm-generic/bitsperlong.h \
-    $(wildcard include/config/64bit.h) \
-  include/uapi/asm-generic/bitsperlong.h \
-  arch/arm/include/asm/memory.h \
-    $(wildcard include/config/need/mach/memory/h.h) \
-    $(wildcard include/config/page/offset.h) \
-    $(wildcard include/config/thumb2/kernel.h) \
-    $(wildcard include/config/highmem.h) \
-    $(wildcard include/config/smp.h) \
-    $(wildcard include/config/dram/base.h) \
-    $(wildcard include/config/dram/size.h) \
-    $(wildcard include/config/xip/kernel.h) \
-    $(wildcard include/config/have/tcm.h) \
-    $(wildcard include/config/arm/patch/phys/virt.h) \
-    $(wildcard include/config/phys/offset.h) \
-    $(wildcard include/config/xip/phys/addr.h) \
-    $(wildcard include/config/debug/virtual.h) \
+  /home/kseniyahry/Desktop/CompArchitecture/module_test/inc/hello1.h \
+  include/linux/init.h \
+    $(wildcard include/config/have/arch/prel32/relocations.h) \
+    $(wildcard include/config/strict/kernel/rwx.h) \
+    $(wildcard include/config/strict/module/rwx.h) \
   include/linux/compiler.h \
     $(wildcard include/config/trace/branch/profiling.h) \
     $(wildcard include/config/profile/all/branches.h) \
@@ -72,6 +29,13 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
     $(wildcard include/config/kasan.h) \
   include/linux/compiler_types.h \
   include/uapi/linux/types.h \
+  arch/arm/include/uapi/asm/types.h \
+  include/asm-generic/int-ll64.h \
+  include/uapi/asm-generic/int-ll64.h \
+  arch/arm/include/generated/uapi/asm/bitsperlong.h \
+  include/asm-generic/bitsperlong.h \
+    $(wildcard include/config/64bit.h) \
+  include/uapi/asm-generic/bitsperlong.h \
   include/uapi/linux/posix_types.h \
   include/linux/stddef.h \
   include/uapi/linux/stddef.h \
@@ -79,36 +43,86 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
   include/uapi/asm-generic/posix_types.h \
   arch/arm/include/asm/barrier.h \
     $(wildcard include/config/cpu/32v6k.h) \
+    $(wildcard include/config/thumb2/kernel.h) \
+    $(wildcard include/config/cpu/xsc3.h) \
     $(wildcard include/config/cpu/fa526.h) \
     $(wildcard include/config/arm/heavy/mb.h) \
     $(wildcard include/config/arm/dma/mem/bufferable.h) \
+    $(wildcard include/config/smp.h) \
     $(wildcard include/config/cpu/spectre.h) \
   include/asm-generic/barrier.h \
   include/linux/kasan-checks.h \
-  include/linux/const.h \
-  include/uapi/linux/const.h \
   include/linux/types.h \
     $(wildcard include/config/have/uid16.h) \
     $(wildcard include/config/uid16.h) \
     $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
-  include/linux/sizes.h \
-  include/asm-generic/memory_model.h \
-    $(wildcard include/config/flatmem.h) \
-    $(wildcard include/config/discontigmem.h) \
-    $(wildcard include/config/sparsemem/vmemmap.h) \
-    $(wildcard include/config/sparsemem.h) \
-  include/linux/pfn.h \
-  include/asm-generic/getorder.h \
-  include/linux/log2.h \
-    $(wildcard include/config/arch/has/ilog2/u32.h) \
-    $(wildcard include/config/arch/has/ilog2/u64.h) \
+  include/linux/slab.h \
+    $(wildcard include/config/debug/slab.h) \
+    $(wildcard include/config/debug/objects.h) \
+    $(wildcard include/config/failslab.h) \
+    $(wildcard include/config/memcg/kmem.h) \
+    $(wildcard include/config/have/hardened/usercopy/allocator.h) \
+    $(wildcard include/config/slab.h) \
+    $(wildcard include/config/slub.h) \
+    $(wildcard include/config/slob.h) \
+    $(wildcard include/config/zone/dma.h) \
+    $(wildcard include/config/numa.h) \
+    $(wildcard include/config/tracing.h) \
+  include/linux/gfp.h \
+    $(wildcard include/config/lockdep.h) \
+    $(wildcard include/config/highmem.h) \
+    $(wildcard include/config/zone/dma32.h) \
+    $(wildcard include/config/zone/device.h) \
+    $(wildcard include/config/pm/sleep.h) \
+    $(wildcard include/config/compaction.h) \
+    $(wildcard include/config/memory/isolation.h) \
+    $(wildcard include/config/cma.h) \
+  include/linux/mmdebug.h \
+    $(wildcard include/config/debug/vm.h) \
+    $(wildcard include/config/debug/virtual.h) \
+    $(wildcard include/config/debug/vm/pgflags.h) \
+  include/linux/bug.h \
+    $(wildcard include/config/generic/bug.h) \
+    $(wildcard include/config/bug/on/data/corruption.h) \
+  arch/arm/include/asm/bug.h \
+    $(wildcard include/config/debug/bugverbose.h) \
+    $(wildcard include/config/arm/lpae.h) \
+  include/linux/linkage.h \
+  include/linux/stringify.h \
+  include/linux/export.h \
+    $(wildcard include/config/modules.h) \
+    $(wildcard include/config/modversions.h) \
+    $(wildcard include/config/module/rel/crcs.h) \
+    $(wildcard include/config/trim/unused/ksyms.h) \
+    $(wildcard include/config/unused/symbols.h) \
+  arch/arm/include/asm/linkage.h \
+  arch/arm/include/asm/opcodes.h \
+    $(wildcard include/config/cpu/endian/be8.h) \
+    $(wildcard include/config/cpu/endian/be32.h) \
+  include/linux/swab.h \
+  include/uapi/linux/swab.h \
+  arch/arm/include/asm/swab.h \
+  arch/arm/include/uapi/asm/swab.h \
+  include/asm-generic/bug.h \
+    $(wildcard include/config/bug.h) \
+    $(wildcard include/config/generic/bug/relative/pointers.h) \
+  include/linux/kernel.h \
+    $(wildcard include/config/preempt/voluntary.h) \
+    $(wildcard include/config/debug/atomic/sleep.h) \
+    $(wildcard include/config/mmu.h) \
+    $(wildcard include/config/prove/locking.h) \
+    $(wildcard include/config/arch/has/refcount.h) \
+    $(wildcard include/config/panic/timeout.h) \
+    $(wildcard include/config/ftrace/mcount/record.h) \
+  /opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/8.3.0/include/stdarg.h \
   include/linux/bitops.h \
   include/linux/bits.h \
+  include/linux/const.h \
+  include/uapi/linux/const.h \
   arch/arm/include/asm/bitops.h \
   include/linux/irqflags.h \
-    $(wildcard include/config/prove/locking.h) \
     $(wildcard include/config/trace/irqflags.h) \
     $(wildcard include/config/irqsoff/tracer.h) \
     $(wildcard include/config/preempt/tracer.h) \
@@ -119,7 +133,8 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
   arch/arm/include/asm/ptrace.h \
     $(wildcard include/config/arm/thumb.h) \
   arch/arm/include/uapi/asm/ptrace.h \
-    $(wildcard include/config/cpu/endian/be8.h) \
+  arch/arm/include/asm/hwcap.h \
+  arch/arm/include/uapi/asm/hwcap.h \
   include/asm-generic/irqflags.h \
   include/asm-generic/bitops/non-atomic.h \
   include/asm-generic/bitops/builtin-__fls.h \
@@ -147,6 +162,7 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
     $(wildcard include/config/arm/l1/cache/shift.h) \
     $(wildcard include/config/aeabi.h) \
   arch/arm/include/asm/cmpxchg.h \
+    $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/sa110.h) \
     $(wildcard include/config/cpu/v6.h) \
   include/asm-generic/cmpxchg-local.h \
@@ -157,51 +173,11 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
   arch/arm/include/uapi/asm/byteorder.h \
   include/linux/byteorder/little_endian.h \
   include/uapi/linux/byteorder/little_endian.h \
-  include/linux/swab.h \
-  include/uapi/linux/swab.h \
-  arch/arm/include/asm/swab.h \
-  arch/arm/include/uapi/asm/swab.h \
   include/linux/byteorder/generic.h \
   include/asm-generic/bitops/ext2-atomic-setbit.h \
-  arch/arm/include/asm/user.h \
-  include/uapi/linux/elf.h \
-  include/uapi/linux/elf-em.h \
-  include/linux/module.h \
-    $(wildcard include/config/modules.h) \
-    $(wildcard include/config/sysfs.h) \
-    $(wildcard include/config/modules/tree/lookup.h) \
-    $(wildcard include/config/livepatch.h) \
-    $(wildcard include/config/unused/symbols.h) \
-    $(wildcard include/config/module/sig.h) \
-    $(wildcard include/config/generic/bug.h) \
-    $(wildcard include/config/kallsyms.h) \
-    $(wildcard include/config/tracepoints.h) \
-    $(wildcard include/config/jump/label.h) \
-    $(wildcard include/config/tracing.h) \
-    $(wildcard include/config/event/tracing.h) \
-    $(wildcard include/config/ftrace/mcount/record.h) \
-    $(wildcard include/config/constructors.h) \
-    $(wildcard include/config/function/error/injection.h) \
-    $(wildcard include/config/strict/module/rwx.h) \
-  include/linux/list.h \
-    $(wildcard include/config/debug/list.h) \
-  include/linux/poison.h \
-    $(wildcard include/config/illegal/pointer/value.h) \
-    $(wildcard include/config/page/poisoning/zero.h) \
-  include/linux/kernel.h \
-    $(wildcard include/config/preempt/voluntary.h) \
-    $(wildcard include/config/debug/atomic/sleep.h) \
-    $(wildcard include/config/arch/has/refcount.h) \
-    $(wildcard include/config/panic/timeout.h) \
-  /opt/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/8.3.0/include/stdarg.h \
-  include/linux/linkage.h \
-  include/linux/stringify.h \
-  include/linux/export.h \
-    $(wildcard include/config/modversions.h) \
-    $(wildcard include/config/module/rel/crcs.h) \
-    $(wildcard include/config/have/arch/prel32/relocations.h) \
-    $(wildcard include/config/trim/unused/ksyms.h) \
-  arch/arm/include/asm/linkage.h \
+  include/linux/log2.h \
+    $(wildcard include/config/arch/has/ilog2/u32.h) \
+    $(wildcard include/config/arch/has/ilog2/u64.h) \
   include/linux/printk.h \
     $(wildcard include/config/message/loglevel/default.h) \
     $(wildcard include/config/console/loglevel/default.h) \
@@ -210,8 +186,6 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
     $(wildcard include/config/printk/nmi.h) \
     $(wildcard include/config/printk.h) \
     $(wildcard include/config/dynamic/debug.h) \
-  include/linux/init.h \
-    $(wildcard include/config/strict/kernel/rwx.h) \
   include/linux/kern_levels.h \
   include/linux/cache.h \
     $(wildcard include/config/arch/has/cache/line/size.h) \
@@ -221,36 +195,49 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
   arch/arm/include/asm/div64.h \
   arch/arm/include/asm/compiler.h \
   include/asm-generic/div64.h \
-  include/linux/stat.h \
-  arch/arm/include/uapi/asm/stat.h \
-  include/uapi/linux/stat.h \
-  include/linux/time.h \
-    $(wildcard include/config/arch/uses/gettimeoffset.h) \
-  include/linux/seqlock.h \
-    $(wildcard include/config/debug/lock/alloc.h) \
+  include/linux/mmzone.h \
+    $(wildcard include/config/force/max/zoneorder.h) \
+    $(wildcard include/config/zsmalloc.h) \
+    $(wildcard include/config/memcg.h) \
+    $(wildcard include/config/sparsemem.h) \
+    $(wildcard include/config/memory/hotplug.h) \
+    $(wildcard include/config/discontigmem.h) \
+    $(wildcard include/config/flat/node/mem/map.h) \
+    $(wildcard include/config/page/extension.h) \
+    $(wildcard include/config/no/bootmem.h) \
+    $(wildcard include/config/deferred/struct/page/init.h) \
+    $(wildcard include/config/transparent/hugepage.h) \
+    $(wildcard include/config/have/memory/present.h) \
+    $(wildcard include/config/have/memoryless/nodes.h) \
+    $(wildcard include/config/have/memblock/node/map.h) \
+    $(wildcard include/config/need/multiple/nodes.h) \
+    $(wildcard include/config/have/arch/early/pfn/to/nid.h) \
+    $(wildcard include/config/flatmem.h) \
+    $(wildcard include/config/sparsemem/extreme.h) \
+    $(wildcard include/config/memory/hotremove.h) \
+    $(wildcard include/config/have/arch/pfn/valid.h) \
+    $(wildcard include/config/holes/in/zone.h) \
+    $(wildcard include/config/arch/has/holes/memorymodel.h) \
   include/linux/spinlock.h \
     $(wildcard include/config/debug/spinlock.h) \
     $(wildcard include/config/preempt.h) \
+    $(wildcard include/config/debug/lock/alloc.h) \
   include/linux/preempt.h \
     $(wildcard include/config/preempt/count.h) \
     $(wildcard include/config/debug/preempt.h) \
     $(wildcard include/config/trace/preempt/toggle.h) \
     $(wildcard include/config/preempt/notifiers.h) \
+  include/linux/list.h \
+    $(wildcard include/config/debug/list.h) \
+  include/linux/poison.h \
+    $(wildcard include/config/illegal/pointer/value.h) \
+    $(wildcard include/config/page/poisoning/zero.h) \
   arch/arm/include/generated/asm/preempt.h \
   include/asm-generic/preempt.h \
   include/linux/thread_info.h \
     $(wildcard include/config/thread/info/in/task.h) \
     $(wildcard include/config/have/arch/within/stack/frames.h) \
     $(wildcard include/config/hardened/usercopy.h) \
-  include/linux/bug.h \
-    $(wildcard include/config/bug/on/data/corruption.h) \
-  arch/arm/include/asm/bug.h \
-    $(wildcard include/config/debug/bugverbose.h) \
-  arch/arm/include/asm/opcodes.h \
-    $(wildcard include/config/cpu/endian/be32.h) \
-  include/asm-generic/bug.h \
-    $(wildcard include/config/bug.h) \
-    $(wildcard include/config/generic/bug/relative/pointers.h) \
   include/linux/restart_block.h \
   include/linux/time64.h \
     $(wildcard include/config/64bit/time.h) \
@@ -268,11 +255,35 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
   arch/arm/include/asm/fpstate.h \
     $(wildcard include/config/vfpv3.h) \
     $(wildcard include/config/iwmmxt.h) \
+  arch/arm/include/asm/page.h \
+    $(wildcard include/config/cpu/copy/v4wt.h) \
+    $(wildcard include/config/cpu/copy/v4wb.h) \
+    $(wildcard include/config/cpu/copy/feroceon.h) \
+    $(wildcard include/config/cpu/copy/fa.h) \
+    $(wildcard include/config/cpu/xscale.h) \
+    $(wildcard include/config/cpu/copy/v6.h) \
+    $(wildcard include/config/kuser/helpers.h) \
+  arch/arm/include/asm/glue.h \
+  arch/arm/include/asm/pgtable-2level-types.h \
+  arch/arm/include/asm/memory.h \
+    $(wildcard include/config/need/mach/memory/h.h) \
+    $(wildcard include/config/page/offset.h) \
+    $(wildcard include/config/dram/base.h) \
+    $(wildcard include/config/dram/size.h) \
+    $(wildcard include/config/xip/kernel.h) \
+    $(wildcard include/config/have/tcm.h) \
+    $(wildcard include/config/arm/patch/phys/virt.h) \
+    $(wildcard include/config/phys/offset.h) \
+    $(wildcard include/config/xip/phys/addr.h) \
+  include/linux/sizes.h \
+  include/asm-generic/memory_model.h \
+    $(wildcard include/config/sparsemem/vmemmap.h) \
+  include/linux/pfn.h \
+  include/asm-generic/getorder.h \
   include/linux/bottom_half.h \
   include/linux/spinlock_types.h \
   arch/arm/include/asm/spinlock_types.h \
   include/linux/lockdep.h \
-    $(wildcard include/config/lockdep.h) \
     $(wildcard include/config/lock/stat.h) \
   include/linux/rwlock_types.h \
   arch/arm/include/asm/spinlock.h \
@@ -308,44 +319,6 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
     $(wildcard include/config/inline/write/unlock/irq.h) \
     $(wildcard include/config/inline/read/unlock/irqrestore.h) \
     $(wildcard include/config/inline/write/unlock/irqrestore.h) \
-  include/linux/time32.h \
-  include/linux/uidgid.h \
-    $(wildcard include/config/multiuser.h) \
-    $(wildcard include/config/user/ns.h) \
-  include/linux/highuid.h \
-  include/linux/kmod.h \
-  include/linux/umh.h \
-  include/linux/gfp.h \
-    $(wildcard include/config/zone/dma.h) \
-    $(wildcard include/config/zone/dma32.h) \
-    $(wildcard include/config/zone/device.h) \
-    $(wildcard include/config/numa.h) \
-    $(wildcard include/config/pm/sleep.h) \
-    $(wildcard include/config/compaction.h) \
-    $(wildcard include/config/memory/isolation.h) \
-    $(wildcard include/config/cma.h) \
-  include/linux/mmdebug.h \
-    $(wildcard include/config/debug/vm.h) \
-    $(wildcard include/config/debug/vm/pgflags.h) \
-  include/linux/mmzone.h \
-    $(wildcard include/config/force/max/zoneorder.h) \
-    $(wildcard include/config/zsmalloc.h) \
-    $(wildcard include/config/memcg.h) \
-    $(wildcard include/config/memory/hotplug.h) \
-    $(wildcard include/config/flat/node/mem/map.h) \
-    $(wildcard include/config/page/extension.h) \
-    $(wildcard include/config/no/bootmem.h) \
-    $(wildcard include/config/deferred/struct/page/init.h) \
-    $(wildcard include/config/transparent/hugepage.h) \
-    $(wildcard include/config/have/memory/present.h) \
-    $(wildcard include/config/have/memoryless/nodes.h) \
-    $(wildcard include/config/have/memblock/node/map.h) \
-    $(wildcard include/config/need/multiple/nodes.h) \
-    $(wildcard include/config/have/arch/early/pfn/to/nid.h) \
-    $(wildcard include/config/sparsemem/extreme.h) \
-    $(wildcard include/config/memory/hotremove.h) \
-    $(wildcard include/config/holes/in/zone.h) \
-    $(wildcard include/config/arch/has/holes/memorymodel.h) \
   include/linux/wait.h \
   arch/arm/include/generated/asm/current.h \
   include/asm-generic/current.h \
@@ -355,6 +328,7 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
     $(wildcard include/config/base/small.h) \
   include/linux/numa.h \
     $(wildcard include/config/nodes/shift.h) \
+  include/linux/seqlock.h \
   include/linux/nodemask.h \
   include/linux/bitmap.h \
   include/linux/string.h \
@@ -409,11 +383,15 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
   include/linux/workqueue.h \
     $(wildcard include/config/debug/objects/work.h) \
     $(wildcard include/config/freezer.h) \
+    $(wildcard include/config/sysfs.h) \
     $(wildcard include/config/wq/watchdog.h) \
   include/linux/timer.h \
     $(wildcard include/config/debug/objects/timers.h) \
     $(wildcard include/config/no/hz/common.h) \
   include/linux/ktime.h \
+  include/linux/time.h \
+    $(wildcard include/config/arch/uses/gettimeoffset.h) \
+  include/linux/time32.h \
   include/linux/jiffies.h \
   include/linux/timex.h \
   include/uapi/linux/timex.h \
@@ -427,7 +405,6 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
   include/linux/timekeeping.h \
   include/linux/timekeeping32.h \
   include/linux/debugobjects.h \
-    $(wildcard include/config/debug/objects.h) \
     $(wildcard include/config/debug/objects/free.h) \
   include/linux/rcu_segcblist.h \
   include/linux/srcutree.h \
@@ -456,10 +433,42 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
     $(wildcard include/config/arm/cpu/topology.h) \
   include/linux/arch_topology.h \
   include/asm-generic/topology.h \
+  include/linux/overflow.h \
+  include/uapi/linux/limits.h \
+  include/linux/kasan.h \
+  include/linux/module.h \
+    $(wildcard include/config/modules/tree/lookup.h) \
+    $(wildcard include/config/livepatch.h) \
+    $(wildcard include/config/module/sig.h) \
+    $(wildcard include/config/kallsyms.h) \
+    $(wildcard include/config/tracepoints.h) \
+    $(wildcard include/config/jump/label.h) \
+    $(wildcard include/config/event/tracing.h) \
+    $(wildcard include/config/module/unload.h) \
+    $(wildcard include/config/constructors.h) \
+    $(wildcard include/config/function/error/injection.h) \
+  include/linux/stat.h \
+  arch/arm/include/uapi/asm/stat.h \
+  include/uapi/linux/stat.h \
+  include/linux/uidgid.h \
+    $(wildcard include/config/multiuser.h) \
+    $(wildcard include/config/user/ns.h) \
+  include/linux/highuid.h \
+  include/linux/kmod.h \
+  include/linux/umh.h \
   include/linux/sysctl.h \
     $(wildcard include/config/sysctl.h) \
   include/linux/rbtree.h \
   include/uapi/linux/sysctl.h \
+  include/linux/elf.h \
+  arch/arm/include/asm/elf.h \
+    $(wildcard include/config/vdso.h) \
+  arch/arm/include/asm/auxvec.h \
+  arch/arm/include/uapi/asm/auxvec.h \
+  arch/arm/include/asm/vdso_datapage.h \
+  arch/arm/include/asm/user.h \
+  include/uapi/linux/elf.h \
+  include/uapi/linux/elf-em.h \
   include/linux/kobject.h \
     $(wildcard include/config/uevent/helper.h) \
     $(wildcard include/config/debug/kobject/release.h) \
@@ -490,9 +499,7 @@ deps_/home/kseniyahry/module_test/hello_world.mod.o := \
     $(wildcard include/config/have/mod/arch/specific.h) \
     $(wildcard include/config/modules/use/elf/rel.h) \
     $(wildcard include/config/modules/use/elf/rela.h) \
-  include/linux/vermagic.h \
-  include/generated/utsrelease.h \
 
-/home/kseniyahry/module_test/hello_world.mod.o: $(deps_/home/kseniyahry/module_test/hello_world.mod.o)
+/home/kseniyahry/Desktop/CompArchitecture/module_test/hello2.o: $(deps_/home/kseniyahry/Desktop/CompArchitecture/module_test/hello2.o)
 
-$(deps_/home/kseniyahry/module_test/hello_world.mod.o):
+$(deps_/home/kseniyahry/Desktop/CompArchitecture/module_test/hello2.o):
